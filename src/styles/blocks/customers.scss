@@ -1,0 +1,10 @@
+.customers {
+  position: relative;
+  overflow: scroll;
+
+  &__add-button {
+    top: 20px;
+    left: 20px;
+    position: fixed;
+  }
+}

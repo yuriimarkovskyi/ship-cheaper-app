@@ -1,0 +1,13 @@
+.customers-table-row {
+  &__button {
+    width: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

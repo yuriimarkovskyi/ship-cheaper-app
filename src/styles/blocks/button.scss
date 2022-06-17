@@ -1,0 +1,16 @@
+.button {
+  padding: 5px 14px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  background: $green;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &.secondary {
+    border: 1px solid $green;
+    background: transparent;
+    color: $green;
+  }
+}

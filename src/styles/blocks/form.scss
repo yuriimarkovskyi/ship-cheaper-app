@@ -1,0 +1,43 @@
+.form {
+  width: 100%;
+
+  label {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 2.3px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    margin-top: 30.3px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    margin-left: auto
+  }
+
+  input, select {
+    width: 236px;
+    height: 21.87px;
+    background: white;
+    border: 0.25px solid #6B7074;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
