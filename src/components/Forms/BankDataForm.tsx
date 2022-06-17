@@ -32,36 +32,37 @@ function BankDataForm({
       className="form"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="form__title">
-        Bank Data
-      </h2>
-      <label htmlFor="company">
-        <span>
-          IBAN*
-        </span>
-        <input
-          id="iban"
-          style={errors.iban && { border: '1px solid red' }}
-          {...register('iban', { required: 'This field is required' })}
-        />
-      </label>
-      <label htmlFor="name">
-        BIC*
-        <input
-          id="bic"
-          style={errors.bic && { border: '1px solid red' }}
-          {...register('bic', { required: true })}
-        />
-      </label>
-      <label htmlFor="additional">
-        Bank name*
-        <input
-          id="bankName"
-          style={errors.bankName && { border: '1px solid red' }}
-          {...register('bankName', { required: true })}
-        />
-      </label>
-
+      <div className="form__content">
+        <h2 className="form__title">
+          Bank Data
+        </h2>
+        <label htmlFor="company">
+          <span>
+            IBAN*
+          </span>
+          <input
+            id="iban"
+            style={errors.iban && { border: '1px solid red' }}
+            {...register('iban', { required: 'This field is required' })}
+          />
+        </label>
+        <label htmlFor="name">
+          BIC*
+          <input
+            id="bic"
+            style={errors.bic && { border: '1px solid red' }}
+            {...register('bic', { required: true })}
+          />
+        </label>
+        <label htmlFor="additional">
+          Bank name*
+          <input
+            id="bankName"
+            style={errors.bankName && { border: '1px solid red' }}
+            {...register('bankName', { required: true })}
+          />
+        </label>
+      </div>
       <div className="form__buttons">
         <Button
           className="secondary"

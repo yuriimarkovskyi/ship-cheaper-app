@@ -43,49 +43,50 @@ function ContactForm({
       className="form"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="form__title">
-        Contact
-      </h2>
-      <label htmlFor="fax">
-        <span>
-          Fax
-        </span>
-        <input
-          id="fax"
-          {...register('fax')}
-        />
-      </label>
-      <label htmlFor="email">
-        <span>
-          E-mail
-        </span>
-        <input
-          id="email"
-          type="email"
-          {...register('email')}
-        />
-      </label>
-      <label htmlFor="birthday">
-        <span>
-          Birthday
-        </span>
-        <input
-          id="birthday"
-          type="date"
-          {...register('birthday')}
-        />
-      </label>
-      <label htmlFor="homepage">
-        <span>
-          Homepage
-        </span>
-        <input
-          id="homepage"
-          type="url"
-          {...register('homepage')}
-        />
-      </label>
-
+      <div className="form__content">
+        <h2 className="form__title">
+          Contact
+        </h2>
+        <label htmlFor="fax">
+          <span>
+            Fax
+          </span>
+          <input
+            id="fax"
+            {...register('fax')}
+          />
+        </label>
+        <label htmlFor="email">
+          <span>
+            E-mail
+          </span>
+          <input
+            id="email"
+            type="email"
+            {...register('email')}
+          />
+        </label>
+        <label htmlFor="birthday">
+          <span>
+            Birthday
+          </span>
+          <input
+            id="birthday"
+            type="date"
+            {...register('birthday')}
+          />
+        </label>
+        <label htmlFor="homepage">
+          <span>
+            Homepage
+          </span>
+          <input
+            id="homepage"
+            type="url"
+            {...register('homepage')}
+          />
+        </label>
+      </div>
       <div className="form__buttons">
         <Button
           className="secondary"

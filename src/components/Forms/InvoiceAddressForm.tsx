@@ -28,59 +28,60 @@ function InvoiceAddressForm({ close, setData }: Props) {
       className="form"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="form__title">
-        Invoice Address
-      </h2>
-      <label htmlFor="company">
-        <span>
-          Company*
-        </span>
-        <input
-          id="company"
-          style={errors.company && { border: '1px solid red' }}
-          {...register('company', { required: 'This field is required' })}
-        />
-      </label>
-      <label htmlFor="name">
-        Name*
-        <input
-          id="name"
-          style={errors.company && { border: '1px solid red' }}
-          {...register('name', { required: true })}
-        />
-      </label>
-      <label htmlFor="additional">
-        Additional
-        <input id="additional" {...register('additional')} />
-      </label>
-      <label htmlFor="street">
-        Street
-        <input id="street" {...register('street')} />
-      </label>
-      <label htmlFor="postalCode">
-        Postal Code
-        <input
-          id="postalCode"
-          type="number"
-          {...register('postalCode')}
-        />
-      </label>
-      <label htmlFor="country">
-        Country
-        <select {...register('country')}>
-          <option defaultValue="" />
-          <option value="Ukraine">
-            Ukraine
-          </option>
-          <option value="USA">
-            USA
-          </option>
-          <option value="Poland">
-            Poland
-          </option>
-        </select>
-      </label>
-
+      <div className="form__content">
+        <h2 className="form__title">
+          Invoice Address
+        </h2>
+        <label htmlFor="company">
+          <span>
+            Company*
+          </span>
+          <input
+            id="company"
+            style={errors.company && { border: '1px solid red' }}
+            {...register('company', { required: 'This field is required' })}
+          />
+        </label>
+        <label htmlFor="name">
+          Name*
+          <input
+            id="name"
+            style={errors.company && { border: '1px solid red' }}
+            {...register('name', { required: true })}
+          />
+        </label>
+        <label htmlFor="additional">
+          Additional
+          <input id="additional" {...register('additional')} />
+        </label>
+        <label htmlFor="street">
+          Street
+          <input id="street" {...register('street')} />
+        </label>
+        <label htmlFor="postalCode">
+          Postal Code
+          <input
+            id="postalCode"
+            type="number"
+            {...register('postalCode')}
+          />
+        </label>
+        <label htmlFor="country">
+          Country
+          <select {...register('country')}>
+            <option defaultValue="" />
+            <option value="Ukraine">
+              Ukraine
+            </option>
+            <option value="USA">
+              USA
+            </option>
+            <option value="Poland">
+              Poland
+            </option>
+          </select>
+        </label>
+      </div>
       <div className="form__buttons">
         <Button
           className="secondary"
