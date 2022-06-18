@@ -2,13 +2,13 @@ import React from 'react';
 import { ICustomer } from 'types';
 import deleteIcon from 'images/icons/delete-icon.svg';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { deleteCustomer } from 'store/customersSlice';
+import { deleteCustomer } from 'redux/slices/customersSlice';
 
 interface Props {
   customer: ICustomer
 }
 
-function CustomersTableRow({ customer }: Props) {
+function CustomersTableItem({ customer }: Props) {
   const dispatch = useAppDispatch();
   const deleteRow = () => dispatch(deleteCustomer(customer.id));
 
@@ -66,4 +66,4 @@ function CustomersTableRow({ customer }: Props) {
   );
 }
 
-export default CustomersTableRow;
+export default CustomersTableItem;

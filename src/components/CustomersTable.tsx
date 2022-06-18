@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppSelector } from 'hooks/useAppSelector';
 import customersTableHeader from 'constants/customersTableHeader';
-import CustomersTableRow from './CustomersTableRow';
+import CustomersTableItem from './CustomersTableItem';
 
 function CustomersTable() {
   const customers = useAppSelector((state) => state.customers);
@@ -19,7 +19,7 @@ function CustomersTable() {
       </thead>
       <tbody>
         {customers.map((customer) => (
-          <CustomersTableRow key={customer.id} customer={customer} />
+          <CustomersTableItem key={customer.id} customer={customer} />
         ))}
       </tbody>
     </table>

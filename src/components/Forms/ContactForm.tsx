@@ -2,8 +2,8 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { IContact } from 'types';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { addCustomer } from 'store/customersSlice';
-import { decrement } from 'store/counterSlice';
+import { addCustomer } from 'redux/slices/customersSlice';
+import { decrement } from 'redux/slices/counterSlice';
 import Button from '../UI/Button';
 
 interface Props {

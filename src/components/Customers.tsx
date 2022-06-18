@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { reset } from 'store/counterSlice';
+import { reset } from 'redux/slices/counterSlice';
 import CustomersTable from './CustomersTable';
 import Button from './UI/Button';
 import ModalForms from './ModalForms';

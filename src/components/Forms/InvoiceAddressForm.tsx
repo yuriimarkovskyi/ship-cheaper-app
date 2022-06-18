@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { IInvoiceAddress } from 'types';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { increment } from 'store/counterSlice';
+import { increment } from 'redux/slices/counterSlice';
 import Button from '../UI/Button';
 
 interface Props {

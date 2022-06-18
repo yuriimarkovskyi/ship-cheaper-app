@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { IBankData } from 'types';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { decrement, increment } from 'store/counterSlice';
+import { decrement, increment } from 'redux/slices/counterSlice';
 import Button from '../UI/Button';
 
 interface Props {
